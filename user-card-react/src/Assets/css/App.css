@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px; 
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #eee;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 7px;
+  width: 700px;
+  text-align: left;
+}
+thead {
+  height: 47px;
+  background-color: #ffffff;
+}
+thead tr > th {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 12.89px;
+  letter-spacing: 0.15px;
+}
+thead tr:first-child th:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding-left: 47px;
+
+}
+
+thead tr:first-child th:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+tbody tr td:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+tbody tr td:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+tbody:before {
+  content: "-";
+  display: block;
+  line-height: 9px;
+  color: transparent;
+}
+tbody td {
+  height: 56px;
+  background-color: #ffffff;
+}
+
+table input[type="checkbox"] {
+  margin-left: 15px;
+}
+
+
+.card {
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  box-sizing: border-box;
+}
+
+.card .card__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__content__username {
+  height: 19px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+  letter-spacing: 0.15px;
+  margin: auto 0 !important;
+}
+
+.card__content__designation {
+  height: 14px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14.06px;
+  letter-spacing: 0.15px;
+  margin: 0;
+  color: #767676;
+}
+
+/* .card__content__online {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #19E26A;
+} */
+
+/* .card__content__progress__wrapper {
+  width: 164px; 
+  height: 6px; 
+  background-color: #ffffff;
+  border-radius: 5.5px;
+  margin-top: 7px;
+  position: relative;
+} */
+
+/* .card__content__progress {
+  content: " ";
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  background-color: #922EE0;
+  border-radius: inherit;
+  height: inherit;
+} */
+
+.name__initials {
+  width: 29px; 
+  height: 29px; 
+  border-radius: 50%;
+  background-color: #6200EE;
+  display: grid;
+  place-items: center;
+  margin-right: 7px;
+}
+
+.name__initials > span {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 16.41px;
+}

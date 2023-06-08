@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>NodeJs Todo</title>
+</head>
+<body>
+    <h1>Todo Application</h1>
+    <form action="/" method="post">
+        <input type="text" placeholder="Enter todo name" name="todoName">
+        <button type="submit">Add</button>
+    </form>
+    <form class="logout" action="/logout" method="get">
+        <button type="submit">Logout</button>
+    </form>
+    <ul>
+        <% items.forEach((item, index) => { %>
+                <li>
+                    <form action="/completed-todo" method="post">
+                        <input type="hidden" value="<%= item.id %>" name="todoId" />
+                        <input type="hidden" value="<%= item.iscomplete %>" name="todoStatus" />
+                        <input type="checkbox" onChange="this.form.submit()" <%= item.iscomplete ? "checked" : "" %> />
+                    </form>
+                    <p class="<%= item.iscomplete ? 'completed' : '' %>"><%= item.title %></p>
+                    <form action="/remove-todo" method="post">
+                        <button name="delete" value="<%= item.id %>" type="submit">Delete</button>
+                    </form>
+                </li>
+        <%}) %>
+    </ul>
+</body>
+</html>

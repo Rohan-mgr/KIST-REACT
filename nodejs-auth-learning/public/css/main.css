@@ -1,0 +1,50 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    text-align: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ccc;
+    box-shadow: 3px 3px 5px #ccc;
+    padding: 1rem;
+}
+.navbar__nav__items li a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.navbar__nav__items {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.sign__up {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.sign__up form label {
+    display: inline-block;
+    min-width: 80px;
+}
+
+.sign__up form {
+    margin: 3rem 0; 
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem auto;
+    text-align: left;
+}
+
+.sign__up form input {
+    text-align: left;
+}
+.sign__up button {
+    padding: 10px; 
+    cursor: pointer;
+}

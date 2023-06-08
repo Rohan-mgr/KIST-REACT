@@ -1,0 +1,8 @@
+<%- include("./includes/header.ejs") %>
+    <%- include("./includes/navigation.ejs") %>
+    <h1>This is Dashboard</h1>
+    <p>Only viewable if user is logged in.</p>
+    <form action="/logout" method="get">
+        <button type="submit">Logout</button>
+    </form>
+<%- include("./includes/footer.ejs") %>
